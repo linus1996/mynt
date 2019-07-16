@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Roterande mynt</title>
+    <style>
+        img
+        {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="Femkrona.jpg">
+    <script>
+        var degree = 0;
+        setInterval(function()
+        {
+            $('img'.css({'transform':'rotate('+ degree +'deg'}));
+            degree++;
+        },30)
+    </script>
+</body>    
+</html>
+
